@@ -1,0 +1,17 @@
+Creating the database:
+
+CREATE DATABASE doe;
+
+Creating table:
+
+CREATE TABLE donors (
+  id SERIAL PRIMARY KEY,
+  name text NOT NULL,
+  email text NOT NULL,
+  blood text NOT NULL
+);
+
+Creating donors:
+
+INSERT INTO "donors" ("name", "email", "blood") 
+VALUES ('donor name', 'donor@email.com', 'O+');
